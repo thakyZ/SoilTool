@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Blueprints>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Blueprint_SoilTool</SubtypeId>
+			</Id>
+			<DisplayName>Soil Tool</DisplayName>
+			<Icon>Textures\Icons\Tool.dds</Icon>
+			<Prerequisites>
+				<Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
+				<Item Amount="1" TypeId="Ingot" SubtypeId="Nickel" />
+				<Item Amount="0.2" TypeId="Ingot" SubtypeId="Gold" />
+			</Prerequisites>
+      <Entry Class="EliteTools" BlueprintSubtypeId="Blueprint_SoilTool" />
+			<Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="PhysicalSoilTool" />
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Blueprint_DirtBag</SubtypeId>
+			</Id>
+			<DisplayName>Dirt Bag</DisplayName>
+			<Icon>Textures\Icons\Ammo.dds</Icon>
+			<Prerequisites>
+				<Item Amount="10" TypeId="Ingot" SubtypeId="Stone" />
+			</Prerequisites>
+			<Result Amount="1" TypeId="AmmoMagazine" SubtypeId="DirtBag" />
+			<BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Blueprint_IceBag</SubtypeId>
+			</Id>
+			<DisplayName>Ice Bag</DisplayName>
+			<Icon>Textures\Icons\Ammo.dds</Icon>
+			<Prerequisites>
+				<Item Amount="10" TypeId="Ore" SubtypeId="Ice" />
+			</Prerequisites>
+			<Result Amount="1" TypeId="AmmoMagazine" SubtypeId="IceBag" />
+			<BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+		</Blueprint>
+	</Blueprints>
+	<BlueprintClassEntries>
+    <Entry Class="EliteTools" BlueprintSubtypeId="Blueprint_SoilTool" />
+		<Entry Class="Components" BlueprintSubtypeId="Blueprint_DirtBag" />
+		<Entry Class="Ammo" BlueprintSubtypeId="Blueprint_DirtBag" />
+	</BlueprintClassEntries>
+</Definitions>

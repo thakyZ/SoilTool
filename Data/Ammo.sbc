@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<AmmoMagazines>
+		<AmmoMagazine>
+			<Id>
+				<TypeId>AmmoMagazine</TypeId>
+				<SubtypeId>DirtBag</SubtypeId>
+			</Id>
+			<DisplayName>Dirt Bag</DisplayName>
+			<Icon>Textures\Icons\Ammo.dds</Icon>
+			<Size>
+				<X>0.001</X>
+				<Y>0.001</Y>
+				<Z>0.001</Z>
+			</Size>
+			<Mass>2</Mass>
+			<Volume>2</Volume>
+			<Model>Models\ConcreteMix.mwm</Model>
+			<Capacity>1</Capacity>
+			<AmmoDefinitionId Subtype="SoilDull" />
+		</AmmoMagazine>
+		<AmmoMagazine>
+			<Id>
+				<TypeId>AmmoMagazine</TypeId>
+				<SubtypeId>IceBag</SubtypeId>
+			</Id>
+			<DisplayName>Ice Bag</DisplayName>
+			<Icon>Textures\Icons\Ammo.dds</Icon>
+			<Size>
+				<X>0.001</X>
+				<Y>0.001</Y>
+				<Z>0.001</Z>
+			</Size>
+			<Mass>2</Mass>
+			<Volume>2</Volume>
+			<Model>Models\ConcreteMix.mwm</Model>
+			<Capacity>1</Capacity>
+			<AmmoDefinitionId Subtype="SoilDull" />
+		</AmmoMagazine>
+	</AmmoMagazines>
+	<Ammos>
+		<Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+			<Id>
+				<TypeId>AmmoDefinition</TypeId>
+				<SubtypeId>SoilDull</SubtypeId>
+			</Id>
+			<BasicProperties>
+				<DesiredSpeed>0</DesiredSpeed>
+				<SpeedVariance>0</SpeedVariance>
+				<MaxTrajectory>0</MaxTrajectory>
+				<BackkickForce>0.0</BackkickForce>
+			</BasicProperties>
+			<ProjectileProperties>
+				<ProjectileHitImpulse>0.0</ProjectileHitImpulse>
+				<ProjectileMassDamage>0</ProjectileMassDamage>
+				<ProjectileHealthDamage>0</ProjectileHealthDamage>
+			</ProjectileProperties>
+		</Ammo>
+		<Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+			<Id>
+				<TypeId>AmmoDefinition</TypeId>
+				<SubtypeId>IceDull</SubtypeId>
+			</Id>
+			<BasicProperties>
+				<DesiredSpeed>0</DesiredSpeed>
+				<SpeedVariance>0</SpeedVariance>
+				<MaxTrajectory>0</MaxTrajectory>
+				<BackkickForce>0.0</BackkickForce>
+			</BasicProperties>
+			<ProjectileProperties>
+				<ProjectileHitImpulse>0.0</ProjectileHitImpulse>
+				<ProjectileMassDamage>0</ProjectileMassDamage>
+				<ProjectileHealthDamage>0</ProjectileHealthDamage>
+			</ProjectileProperties>
+		</Ammo>
+	</Ammos>
+</Definitions>
